@@ -9,3 +9,14 @@ The commands that I learnd were 'git reset HEAD~1' // to undo my commit, but wit
 The variation of the above command is 'git reset --hard HEAD~1'
 
 In both cases, HEAD is just a pointer to the latest commit. When you do a git reset HEAD~1, you tell Git to move the HEAD pointer back one commit. But (unless you use --hard) you leave your files as they were. So now git status shows the changes you had checked into C. You haven't lost a thing!
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+In git repository I just had 'master' and 'Asus'. In my local repository (HAF-DESKTOP) I had my local branch HAF and I'd like to pull the files from online repository into my local branch.
+
+The first command that I used was: 'git pull origin Asus'
+
+
+git pull x git fetch ----> I read that the 'git pull' is the 'git fetch + git merge'
+
