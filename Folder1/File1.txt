@@ -1,1 +1,9 @@
 This file was created to try use git pull in one Branch that was recently downloaded from the online repository
+
+
+//new Line that was put after 'git add .' and 'git commit -m'
+This commit was created to try use the command git push in one remote branch that was recently download from the server
+
+When I was do the push, this message above was not included in the online repository
+
+Conclusion, If there is at least one modofication after the 'git add .' and 'git commit -m', it isn't be included in the online repository
