@@ -1,0 +1,3 @@
+// Arquivo Criado em HAF
+
+commit --amend
