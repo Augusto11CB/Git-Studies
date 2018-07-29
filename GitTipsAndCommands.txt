@@ -1,0 +1,11 @@
+// The present File have tips and commands about Git
+
+// I made a mistake, I didn't change the master branch for Asus_branch, then I typed 'git add Asus.txt' and 'commit -m msg'
+To undo this mistake I read on stackoverflow -> https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git
+
+
+The commands that I learnd were 'git reset HEAD~1' // to undo my commit, but without leaving the files
+
+The variation of the above command is 'git reset --hard HEAD~1'
+
+In both cases, HEAD is just a pointer to the latest commit. When you do a git reset HEAD~1, you tell Git to move the HEAD pointer back one commit. But (unless you use --hard) you leave your files as they were. So now git status shows the changes you had checked into C. You haven't lost a thing!
