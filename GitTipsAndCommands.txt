@@ -11,6 +11,7 @@ The variation of the above command is 'git reset --hard HEAD~1'
 In both cases, HEAD is just a pointer to the latest commit. When you do a git reset HEAD~1, you tell Git to move the HEAD pointer back one commit. But (unless you use --hard) you leave your files as they were. So now git status shows the changes you had checked into C. You haven't lost a thing!
 
 
+<<<<<<< HEAD
 -------------------------------------------------------------------------------------------------------------------------
 
 In git repository I just had 'master' and 'Asus'. In my local repository (HAF-DESKTOP) I had my local branch HAF and I'd like to pull the files from online repository into my local branch.
@@ -20,3 +21,9 @@ The first command that I used was: 'git pull origin Asus'
 
 git pull x git fetch ----> I read that the 'git pull' is the 'git fetch + git merge'
 
+=======
+HEAD x MASTER
+
+    The simple answer is that HEAD is a pointer/label to the most recent commit of the branch you are currently on.
+    <https://stackoverflow.com/questions/4386959/difference-between-head-and-master>
+>>>>>>> 7258627219a56437be9ee668fd81349d3d313540
