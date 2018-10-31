@@ -13,6 +13,7 @@ public class Teste {
         } 
         else{
             System.out.println("Oi");
+            System.out.println("Oi");
         }
 
     }
