@@ -1,5 +1,8 @@
 # Git-Studies
 
+## Index
+TODO
+
 ## git stash 
 Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. 
 
