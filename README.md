@@ -40,7 +40,13 @@ Using the --patch-option is possible on different git commands (f.e. stash, comm
 Creates and checks out a new branch named <branchname> starting from the commit at which the <stash> was originally created, applies the changes recorded in <stash> to the new working tree. It then drops the stash. 
 
 
+## Push Existing Repo to a New and Different Remote Repo Server?
 
+```
+$ git remote add github-repo <github-repo-url>
+$ git checkout master
+$ git push github-repo master    # push current-repo master branch changes to github-repo master branch
 
-
+$ git remote #shows the remotes tracked
+```
 
