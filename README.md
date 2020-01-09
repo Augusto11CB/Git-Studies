@@ -38,7 +38,12 @@ Using the --patch-option is possible on different git commands (f.e. stash, comm
 
 ### git stash branch <branch_name> [<stashnumber>]
 Creates and checks out a new branch named <branchname> starting from the commit at which the <stash> was originally created, applies the changes recorded in <stash> to the new working tree. It then drops the stash. 
+   
+### Show files inside a stash
+`git stash show -p stash@{x}`
 
+#### Show only the files name inside a stash
+`git stash list --name-status`
 
 ## Push Existing Repo to a New and Different Remote Repo Server?
 
