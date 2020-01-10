@@ -55,3 +55,16 @@ $ git push github-repo master    # push current-repo master branch changes to gi
 $ git remote #shows the remotes tracked
 ```
 
+## How to rename Git local and remote branches
+
+1. Rename Local Branch
+> git branch -m new-name
+   * If i am on a different branch
+   > git branch -m old-name new-name
+2. Delete the old-name remote branch and PUSH the new-name local branch
+> git push origin :old-name new-name
+
+3. Reset upstream branch for the new
+> git push origin -u ne-name
+
+
