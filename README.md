@@ -55,7 +55,7 @@ $ git push github-repo master    # push current-repo master branch changes to gi
 $ git remote #shows the remotes tracked
 ```
 
-## How to rename Git local and remote branches
+## How to rename Git Local and Remote Branches
 
 1. Rename Local Branch
 > git branch -m new-name
@@ -68,3 +68,12 @@ $ git remote #shows the remotes tracked
 > git push origin -u ne-name
 
 
+## Create Branch from a Previous commit
+
+> git branch branchname <sha1-of-commit>
+
+using a symbolic reference:
+> git branch branchname HEAD~3
+
+To checkout the branch when creating it, use:
+> git checkout -b branchname <sha1-of-commit or HEAD~3>
