@@ -45,6 +45,9 @@ Creates and checks out a new branch named <branchname> starting from the commit 
 #### Show only the files name inside a stash
 `git stash list --name-status`
 
+### How can to git stash a specific file?
+`git stash push -m welcome_cart app/views/cart/filename.ext`
+
 ## Push Existing Repo to a New and Different Remote Repo Server?
 
 ```
