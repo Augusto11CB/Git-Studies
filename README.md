@@ -61,22 +61,44 @@ $ git remote #shows the remotes tracked
 ## How to rename Git Local and Remote Branches
 
 1. Rename Local Branch
-> git branch -m new-name
+`$ git branch -m new-name`
    * If i am on a different branch
-   > git branch -m old-name new-name
+   `$ git branch -m old-name new-name`
 2. Delete the old-name remote branch and PUSH the new-name local branch
-> git push origin :old-name new-name
+`$ git push origin :old-name new-name`
 
 3. Reset upstream branch for the new
-> git push origin -u ne-name
+`$ git push origin -u ne-name`
 
 
 ## Create Branch from a Previous commit
 
-> git branch branchname <sha1-of-commit>
+`$ git branch branchname <sha1-of-commit>`
 
 using a symbolic reference:
-> git branch branchname HEAD~3
+`$ git branch branchname HEAD~3`
 
 To checkout the branch when creating it, use:
-> git checkout -b branchname <sha1-of-commit or HEAD~3>
+`$ git checkout -b branchname <sha1-of-commit or HEAD~3>`
+
+## How to Correct a Commit Date
+Rebase to the commit immediately prior to the commit with the wrong date
+`$ git rebase <commit hash> -i`
+   
+Result:
+```
+pick af09d0a Log and add new dependency   # Commit with wrong date
+pick 4e37143 exchanging stop by timeout for buffersize                                                                                   pick 21fc337 Added simple styles in home.html                                                                                           pick 8dc79f6 create readme             
+```
+
+Replace pick with e (edit) on the line with that commit (the first one)
+```
+e af09d0a Log and add new dependency   # Commit with wrong date
+pick 4e37143 exchanging stop by timeout for buffersize                                                                                   pick 21fc337 Added simple styles in home.html                                                                                           pick 8dc79f6 create readme             
+```
+
+Adjust the commit date with 
+`$ git commit --amend --no-edit --date "6 Apr 2018"`
+
+Finish by typing the follow command
+`$ git rebase --continue`
