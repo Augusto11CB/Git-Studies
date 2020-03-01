@@ -93,6 +93,7 @@ To checkout the branch when creating it, use:
 
 ## How to Correct a Commit Date
 Rebase to the commit immediately prior to the commit with the wrong date
+
 `$ git rebase <commit hash> -i`
 
 `$ git remote -v`
