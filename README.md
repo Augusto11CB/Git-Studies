@@ -88,9 +88,14 @@ To checkout the branch when creating it, use:
 
 `$ git checkout -b branchname <sha1-of-commit or HEAD~3>`
 
+## How Can I Determine the Url That a Local Git Repository Was Originally Cloned From?
+`$ git remote get-url origin`
+
 ## How to Correct a Commit Date
 Rebase to the commit immediately prior to the commit with the wrong date
 `$ git rebase <commit hash> -i`
+`$ git remote -v`
+`$ git remote show origin`
    
 Result:
 ```
