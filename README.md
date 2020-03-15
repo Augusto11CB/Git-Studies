@@ -8,6 +8,16 @@ TODO
 
 `$ git push -u origin master`
 
+## How to solve git refusing to merge unrelated histories on rebase?
+
+`$ git pull origin master --allow-unrelated-histories`
+
+`$ git merge origin origin/master`
+
+... add and commit here...
+
+`$ git push origin master`
+
 ## The git stash 
 Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. 
 
