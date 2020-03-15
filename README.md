@@ -3,6 +3,10 @@
 ## Index
 TODO
 
+## push an existing repository from the command line
+`$ git remote add origin git@github.com:AugustoCalado/Test-Repo.git`
+`$ git push -u origin master`
+
 ## git stash 
 Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. 
 
@@ -34,19 +38,19 @@ A hunk is a coherent diff of lines as git-diff produces it. To select a single f
 Using the --patch-option is possible on different git commands (f.e. stash, commit and add).
 
 ### Stage the specific files
-`git stash push -- example/file/path/and/file.html`
+`$ git stash push -- example/file/path/and/file.html`
 
 ### git stash branch <branch_name> [<stashnumber>]
 Creates and checks out a new branch named <branchname> starting from the commit at which the <stash> was originally created, applies the changes recorded in <stash> to the new working tree. It then drops the stash. 
    
 ### Show files inside a stash
-`git stash show -p stash@{x}`
+`$ git stash show -p stash@{x}`
 
 #### Show only the files name inside a stash
-`git stash list --name-status`
+`$ git stash list --name-status`
 
 ### How can to git stash a specific file?
-`git stash push -m welcome_cart app/views/cart/filename.ext`
+`$ git stash push -m welcome_cart app/views/cart/filename.ext`
 
 ## Push Existing Repo to a New and Different Remote Repo Server?
 
