@@ -3,15 +3,15 @@
 ## Index
 TODO
 
-## push an existing repository from the command line
+## Push an existing repository from the command line
 `$ git remote add origin git@github.com:AugustoCalado/Test-Repo.git`
 
 `$ git push -u origin master`
 
-## git stash 
+## The git stash 
 Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. 
 
-### git stash -p 
+### The git stash -p 
 This command will then show a dialog like the following, for every hunk in your possible commit
 `Stash this hunk [y,n,q,a,d,e,?]?`
 
@@ -41,7 +41,7 @@ Using the --patch-option is possible on different git commands (f.e. stash, comm
 ### Stage the specific files
 `$ git stash push -- example/file/path/and/file.html`
 
-### git stash branch <branch_name> [<stashnumber>]
+### The git stash branch <branch_name> [<stashnumber>]
 Creates and checks out a new branch named <branchname> starting from the commit at which the <stash> was originally created, applies the changes recorded in <stash> to the new working tree. It then drops the stash. 
    
 ### Show files inside a stash
