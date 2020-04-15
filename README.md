@@ -82,6 +82,7 @@ $ git remote #shows the remotes tracked
    * If i am on a different branch
    
    `$ git branch -m old-name new-name`
+   
 2. Delete the old-name remote branch and PUSH the new-name local branch
 
 `$ git push origin :old-name new-name`
