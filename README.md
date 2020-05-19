@@ -8,6 +8,9 @@ TODO
 
 `$ git push -u origin master`
 
+## How to change the remote a branch is tracking?
+`$ git branch branch_name -u your_new_remote/branch_name`
+
 ## How to solve git refusing to merge unrelated histories on rebase?
 
 `$ git pull origin master --allow-unrelated-histories`
