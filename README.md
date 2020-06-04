@@ -51,8 +51,8 @@ A hunk is a coherent diff of lines as git-diff produces it. To select a single f
 **Observation**
 Using the --patch-option is possible on different git commands (f.e. stash, commit and add).
 
-### Stage the specific files
-`$ git stash push -- example/file/path/and/file.html`
+### Stage specific files
+`$ git stash push -m stash_name example/file/path/and/file.html`
 
 ### The git stash branch <branch_name> [<stashnumber>]
 Creates and checks out a new branch named <branchname> starting from the commit at which the <stash> was originally created, applies the changes recorded in <stash> to the new working tree. It then drops the stash. 
