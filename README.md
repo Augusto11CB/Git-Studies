@@ -3,6 +3,20 @@
 ## Index
 TODO
 
+## Git Log Useful Commands
+
+### Showing one commit per line
+`$ git log --oneline`
+
+### The `--stat` 
+Flag that can be used to display the files that have been changed in the commit, as well as the number of lines that have been added or deleted.
+`$ git log --stat`
+
+### How to see changes in a file?
+This flag can be used to display the actual changes made to a file.
+`$ git log -p`
+
+
 ## Push an existing repository from the command line
 `$ git remote add origin git@github.com:AugustoCalado/Test-Repo.git`
 
@@ -124,13 +138,23 @@ Rebase to the commit immediately prior to the commit with the wrong date
 Result:
 ```
 pick af09d0a Log and add new dependency   # Commit with wrong date
-pick 4e37143 exchanging stop by timeout for buffersize                                                                                   pick 21fc337 Added simple styles in home.html                                                                                           pick 8dc79f6 create readme             
+
+pick 4e37143 exchanging stop by timeout for buffersize
+
+pick 21fc337 Added simple styles in home.html
+
+pick 8dc79f6 create readme             
 ```
 
 Replace pick with e (edit) on the line with that commit (the first one)
 ```
 e af09d0a Log and add new dependency   # Commit with wrong date
-pick 4e37143 exchanging stop by timeout for buffersize                                                                                   pick 21fc337 Added simple styles in home.html                                                                                           pick 8dc79f6 create readme             
+
+pick 4e37143 exchanging stop by timeout for buffersize
+
+pick 21fc337 Added simple styles in home.html
+
+pick 8dc79f6 create readme             
 ```
 
 Adjust the commit date with 
