@@ -1,5 +1,9 @@
 # Git-Studies
 
+## To Study
+[Git Hooks](https://www.atlassian.com/git/tutorials/git-hooks)
+[Git Cherry Pick](https://www.atlassian.com/git/tutorials/cherry-pick)
+
 ## Index
 TODO
 
@@ -162,3 +166,9 @@ Adjust the commit date with
 
 Finish by typing the follow command
 `$ git rebase --continue`
+
+## References
+[merging-vs-rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+[Resetting, Checking Out & Reverting](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
+[Advanced Git Log](https://www.atlassian.com/git/tutorials/git-log)
+[Merge Strategy](https://www.atlassian.com/git/tutorials/using-branches/merge-strategy)
