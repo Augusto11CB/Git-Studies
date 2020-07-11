@@ -126,12 +126,27 @@ To checkout the branch when creating it, use:
 `$ git checkout -b branchname <sha1-of-commit or HEAD~3>`
 
 ## How Can I Determine the Url That a Local Git Repository Was Originally Cloned From?
-
 `$ git remote get-url origin`
 
 `$ git remote -v`
 
 `$ git remote show origin`
+
+## How to Untrack Files Already Added to Git Repository Based on .gitignore
+1. Commit all changes
+
+2. Remove everything from the repository
+`$ git rm -r --cached .`
+
+rm is the remove command
+-r will allow recursive removal
+–cached will only remove files from the index.
+
+3. Re add everything
+`$ git add .`
+
+4. Commit
+`git commit -m ".gitignore fix"`
 
 ## How to Correct a Commit Date
 Rebase to the commit immediately prior to the commit with the wrong date
