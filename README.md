@@ -136,16 +136,21 @@ To checkout the branch when creating it, use:
 1. Commit all changes
 
 2. Remove everything from the repository
+
 `$ git rm -r --cached .`
 
-rm is the remove command
--r will allow recursive removal
-–cached will only remove files from the index.
+   - rm is the remove command
+
+   - `-r` will allow recursive removal
+
+   - `–cached` will only remove files from the index.
 
 3. Re add everything
+
 `$ git add .`
 
 4. Commit
+
 `git commit -m ".gitignore fix"`
 
 ## How to Correct a Commit Date
