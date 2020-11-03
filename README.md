@@ -192,6 +192,8 @@ to change the commit date instead of the author date:
 Finish by typing the follow command
 `$ git rebase --continue`
 
+[RFC 2822 Formater](https://timestampgenerator.com/1604371652/-03:00)
+
 ## References
 [merging-vs-rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 [Resetting, Checking Out & Reverting](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
