@@ -184,6 +184,11 @@ pick 8dc79f6 create readme
 Adjust the commit date with 
 `$ git commit --amend --no-edit --date "6 Apr 2018"`
 
+
+to change the commit date instead of the author date:
+
+`GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend`
+
 Finish by typing the follow command
 `$ git rebase --continue`
 
