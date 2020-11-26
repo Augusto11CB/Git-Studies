@@ -189,6 +189,12 @@ to change the commit date instead of the author date:
 
 `GIT_COMMITTER_DATE="Wed Feb 16 14:00 2011 +0100" git commit --amend`
 
+
+```
+GIT_COMMITTER_DATE="Mon 20 Aug 2018 20:19:19 BST" git commit --amend --no-edit --date "Mon 20 Aug 2018 20:19:19 BST"
+```
+
+
 Finish by typing the follow command
 `$ git rebase --continue`
 
