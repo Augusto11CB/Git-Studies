@@ -9,6 +9,24 @@ TODO
 
 ## Git Log Useful Commands
 
+### Cloning git repository when folder and files already exist
+
+
+```
+git init
+git remote add origin <my-github-rep.git>
+git fetch
+git branch --set-upstream-to=origin/master
+```
+
+### List of remotes for a Git repository?
+```
+$ git remote
+iqandreas
+octopress
+origin
+```
+
 ### Showing one commit per line
 `$ git log --oneline`
 
