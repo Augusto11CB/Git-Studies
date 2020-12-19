@@ -150,6 +150,27 @@ To checkout the branch when creating it, use:
 
 `$ git remote show origin`
 
+## How to change repo cloned using https to ssh?
+
+1. remove HTTP remote (for example with origin):
+```
+git remote remove origin
+```
+
+2. add the SSH remote
+```
+git remote add origin user@example.com:path/to/project.git
+```
+
+3. set the branch's remote again with
+```
+git push -u origin master
+
+or
+
+git branch --set-upstream-to=origin master
+```
+
 ## How to Untrack Files Already Added to Git Repository Based on .gitignore
 1. Commit all changes
 
