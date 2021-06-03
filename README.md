@@ -264,6 +264,10 @@ git tag <tagname>
 ### Push a Single Tag to Remote Repo
 - `$ git push origin <tag>`
 
+### To Delete Local Tag
+- `$ git tag -d <tag>`
+- `$ git push origin :refs/tags/<tag>`
+   
 ## References
 [merging-vs-rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 [Resetting, Checking Out & Reverting](https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting)
