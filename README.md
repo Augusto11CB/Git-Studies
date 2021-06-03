@@ -250,6 +250,19 @@ Finish by typing the follow command
 `$ git rebase --continue`
 
 [RFC 2822 Formater](https://timestampgenerator.com/1604371652/-03:00)
+   
+## Creating tags from the command line
+To create a tag on your current branch, run this:
+
+git tag <tagname>
+### Include a Description with a Tag
+- `$ git tag <tagname> -a`
+
+### Push Tags to Remote Repo
+- `$ git push origin --tags`
+
+### Push a Single Tag to Remote Repo
+- `$ git push origin <tag>`
 
 ## References
 [merging-vs-rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
